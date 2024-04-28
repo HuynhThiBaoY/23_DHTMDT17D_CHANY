@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chany Bookstore</title>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="css/sachban.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="script.js" rel="script">
+</head>
+
+<header>
+    <header class="container">
+        <div class="top-info">
+            <small><i class="fas fa-map-marker-alt"></i>  41/22 Phạm Ngũ Lão, phường 3, quận Gò Vấp</small>
+            <small><i class="fas fa-envelope"></i>  Chanybookstore@gmail.com</small>
+        </div>
+    </header>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">CHANY</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index3.html" class="nav-link active">Trang Chủ</a></li>
+            <li class="nav-item"><a href="sachban2.html" class="nav-link">Sách Bán</a></li>
+            <li class="nav-item dropdown">
+                <a href="docsachmienphi.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sách đọc miễn phí</a>
+                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                    <a href="docsachmienphi.html" class="dropdown-item">Truyện tranh</a>
+                    <a href="docsachmienphi.html" class="dropdown-item">Tiểu thuyết</a>
+                    <a href="docsachmienphi.html" class="dropdown-item">Văn học</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="gioithieu.html" class="nav-link">Giới thiệu</a></li>
+            <li class="nav-item"><a href="lienhe2.html" class="nav-link">Liên Hệ</a></li>
+        </ul>
+        <div class="d-flex m-3 me-0">
+            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" onclick="document.getElementById('id01').style.display='block'"><i class="fas fa-search text-primary"></i></button>
+            <a href="#" class="position-relative me-4 my-auto">
+                <i class="fa fa-shopping-bag fa-2x"></i>
+                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px;"></span>
+            </a>
+            <a href="#" id="loginIcon" class="my-auto"><i class="fas fa-user fa-2x"></i></a>
+        </div>
+    </nav>
+    <!-- Modal HTML -->
+    <div id="id01" class="modal" style="display: none;">
+        <!-- Modal content would be here -->
+        <!-- Details are omitted for brevity -->
+  
+    
+   <!-- Modal -->
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <div class="container2">
+     <form action="/action_page.php">
+       <div class="row">
+         <h2 style="text-align:center">Đăng nhập hoặc đăng kí</h2>
+         <div class="vl">
+           <span class="vl-innertext">Hoặc</span>
+         </div>
+   
+         <div class="col">
+           <a href="#" class="fb btn">
+             <i class="fa fa-facebook fa-fw"></i> Đăng nhập với Facebook
+            </a>
+           <a href="#" class="twitter btn">
+             <i class="fa fa-twitter fa-fw"></i> Đăng nhập với Twitter
+           </a>
+           <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+             </i> Đăng nhập với Google+
+           </a>
+         </div>
+   
+         <div class="col">
+           <div class="hide-md-lg">
+             <p>Or sign in manually:</p>
+           </div>
+   
+           <input type="text" name="username" placeholder="Tên đăng nhập" required>
+           <input type="password" name="password" placeholder="Mật khẩu" required>
+           <input type="submit" value="Đăng nhập">
+         </div>
+         
+       </div>
+     </form>
+   </div>
+   
+   <div class="bottom-container">
+     <div class="row">
+       <div class="col">
+         <a href="#" style="color:white" class="btn">Đăng ký</a>
+       </div>
+       <div class="col">
+         <a href="#" style="color:white" class="btn">Quên mật khẩu?</a>
+       </div>
+     </div>
+   </div>
+   </div>
+    <link rel="stylesheet" href="css/formdangnhap.css"> 
+       <script>
+document.addEventListener('DOMContentLoaded', function() {
+   var loginIcon = document.getElementById('loginIcon');
+   var modal = document.getElementById('id01');
+
+   loginIcon.addEventListener('click', function() {
+       modal.style.display = 'block';
+   });
+
+   window.onclick = function(event) {
+       if (event.target == modal) {
+           modal.style.display = "none";
+       }
+   };
+
+   window.addEventListener("scroll", function() {
+       var navbar = document.getElementById("navbar");
+       if (window.scrollY > 0) {
+           navbar.classList.add("fixed-navbar");
+       } else {
+           navbar.classList.remove("fixed-navbar");
+       }
+   });
+});
+       </script>
+   </div>
+           </div>
+           </div>
+</header>
+<!-- Kéo hình-->
+
+</head>
+<body>
+    <style>
+        /* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #fefcfc;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px;
+}
+
+.mission,
+.story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border: 2px solid #333; /* Đường viền màu đen, rộng 2px */
+    border-radius: 10px; /* Bo góc 10px */
+    padding: 20px; /* Khoảng cách giữa nội dung và viền */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #f3c7c7; /* Màu nền nhạt */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+
+}
+
+.mission-text,
+.story-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.mission-image,
+.story-image {
+    flex: 1;
+    text-align: center;
+}
+
+.mission-image img,
+.story-image img {
+    max-width: 100%;
+    height: auto;
+}
+.mission-image img,
+.story-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50% 20% / 10% 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+    </style>
+    <main>
+        <section class="mission">
+            <div class="mission-text">
+                <h2>Sứ mệnh của chúng tôi</h2>
+                <p>Tại công ty chúng tôi, chúng tôi tin rằng sách là một công cụ quyền lực để thúc đẩy sự phát triển trí tuệ và tâm hồn. Sứ mệnh của chúng tôi là mang đến cho mọi người cơ hội tiếp cận với nguồn tri thức phong phú từ các tác phẩm văn học, khoa học, lịch sử và nhiều lĩnh vực khác. Chúng tôi muốn truyền cảm hứng đam mê đọc sách cho tất cả mọi người, từ những người yêu thích đọc sách đến những người mới bắt đầu khám phá thế giới sách.</p>
+            </div>
+            <div class="mission-image">
+                <img src="img/3.png" alt="Hình ảnh sứ mệnh">
+            </div>
+        </section>
+        
+        <section class="story">
+            <div class="story-image">
+                <img src="img/4.png" alt="Hình ảnh câu chuyện">
+            </div>
+            <div class="story-text">
+                <h2>Câu chuyện của chúng tôi</h2>
+<p>Chany Book Store ra đời từ niềm đam mê bất tận với sách của hai người bạn thân,Huyền Trang và Bảo Ý. Từ khi còn học đại học, họ đã dành nhiều thời gian ở các hiệu sách để đọc, chia sẻ và trao đổi về những cuốn sách yêu thích. Sau khi tốt nghiệp, họ nuôi ý tưởng mở một hiệu sách riêng, nơi mọi người có thể tìm thấy không chỉ những cuốn sách hay mà còn là một không gian thân thiện để giao lưu, trò chuyện và chia sẻ niềm đam mê với sách.</p>
+
+<p>Năm 2023, ước mơ của họ trở thành hiện thực khi Chany Book Store chính thức khai trương. Từ một hiệu sách nhỏ, Chany đã phát triển thành một trong những địa điểm yêu thích của các người yêu sách tại thành phố. Không chỉ cung cấp một kho sách phong phú, Chany còn tổ chức các sự kiện văn học, đọc sách cùng nhà văn và là nơi quy tụ của cộng đồng người yêu sách.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

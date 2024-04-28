@@ -1,0 +1,615 @@
+header {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    
+}
+.header .top-info {
+    margin: 0;
+    padding: 10px 20px; /* Giảm padding nếu cần */
+    background-color: #28a745; /* Màu xanh */
+    color: white; /* Màu chữ */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Đảm bảo các phần tử trong top-info được phân bố đều */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between; /* Đẩy các phần tử về hai bên */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    background-color: #fdfefe;
+}
+
+/* Top info section */
+.top-info {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  width: 2000px; /* Chiều ngang */
+  height: 32px; /* Chiều dọc */
+  background-color: #28a745; /* Màu xanh */
+  border-radius: 15px; /* Bo góc */
+  padding: 0 20px; /* Khoảng cách giữa các phần tử */
+  border: 2px solid #d9fe82; /* Màu viền xanh (hex code: #007bff) */
+
+}
+.top-info a,
+.top-info small {
+    color: #fff; /* Chữ màu trắng */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Khoảng cách giữa các small element */
+}
+.small i {
+    margin-right: 10px; /* Khoảng cách giữa icon và văn bản */
+    color: gold; /* Màu của icon */
+}
+.top-info i {
+    color: gold; /* Màu vàng cho icon */
+    margin-right: 10px; /* Khoảng cách giữa icon và văn bản */
+}
+
+
+.top-link {
+    text-align: right;
+}
+
+/* Navigation bar */
+
+.navbar {
+    background-color: #fafafa;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Căn phần tử navbar lên trên */
+    width: 100%;
+    height: 60px; /* Chiều cao thanh điều hướng */
+    margin-top: 0; /* Loại bỏ khoảng cách giữa top-info và navbar */
+    justify-content: space-between; /* Đẩy các phần tử về hai bên */
+    border-bottom: 1px solid rgba(219, 217, 217, 0.1);
+
+}
+
+.navbar-brand {
+    font-size: 29px;
+    color: #0bae31; /* Màu xanh */
+    font-weight: bold;
+    text-decoration: none; /* Loại bỏ gạch chân mặc định */
+    text-shadow: 0 0 3px gold; /* Thêm viền màu vàng cho các chữ */
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Căn giữa các mục trong navbar theo chiều dọc */
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+  color: #3f3f3f; /* Màu chữ mặc định */
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1.5px; /* Tăng khoảng cách chữ */
+  font-size:18px;
+  padding: 20px 20px; /* Khoảng cách bên trong dropdown menu */
+}
+
+.nav-link.active {
+    color: #03682f; /* Màu chữ khi được chọn */
+    background-color: #f5f2f2;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative; /* Đặt vị trí tương đối để dropdown-menu được căn đúng chỗ */
+}
+
+.dropdown-menu {
+    display: none; /* Ẩn dropdown menu khi không hover */
+    position: absolute;
+    top: 100%; /* Đặt ngay dưới phần tử cha */
+    left: 0;
+    background-color: #ddd;
+    min-width: 100%; /* Chiều rộng tối thiểu bằng với mục cha */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Đảm bảo dropdown hiển thị trên các thành phần khác */
+    padding: 30px 15px; /* Khoảng cách bên trong dropdown menu */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Hiển thị dropdown menu khi hover */
+}
+
+.dropdown-item {
+    display: block; /* Đảm bảo các mục con hiển thị theo cột dọc */
+    width: 100%; /* Độ rộng của mỗi mục con bằng với dropdown menu */
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none; /* Loại bỏ gạch chân */
+    white-space: nowrap; /* Tránh xuống hàng trong mục */
+}
+
+.dropdown-item:hover {
+    background-color: #ccc; /* Thay đổi màu khi hover */
+}
+
+/* Bổ sung cho hiệu ứng hover */
+.nav-item.dropdown:hover .nav-link {
+    background-color: #f5f2f2; /* Màu nền khi hover vào dropdown */
+    color: #03682f; /* Màu chữ khi được chọn */
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+.fixed-navbar {
+    position: fixed; /* Đặt thanh điều hướng ở vị trí cố định */
+    top: 0; /* Đặt thanh điều hướng ở trên cùng của trang */
+    width: 100%; /* Chiều rộng của thanh điều hướng */
+    z-index: 1000; /* Đảm bảo thanh điều hướng ở trên cùng */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+}
+
+/* Search and user icons */
+.search-icon,
+.cart-icon,
+.user-icon {
+    font-size: 24px;
+  
+    margin-left: 20px;
+}
+.btn-search .fas {
+    font-size: 30px; /* Đặt kích thước font là 56px */
+    color:#07e630;
+    text-shadow: 0 0 5px gold; /* Thêm viền màu vàng cho các chữ */
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: #23e111;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+    text-shadow: 0 0 5px gold; /* Thêm viền màu vàng cho các chữ */
+}
+/* Đổi màu của biểu tượng mua sắm thành xanh */
+.fa-shopping-bag {
+    color: #07e630; /* Màu xanh */
+    margin-right: 10px; /* Khoảng cách giữa icon và văn bản */
+    text-shadow: 0 0 3px gold; /* Thêm viền màu vàng cho các chữ */
+}
+
+/* Đổi màu của biểu tượng người dùng thành xanh */
+.fa-user {
+    color: #07e630; /* Màu xanh */
+    margin-right: 10px; /* Khoảng cách giữa icon và văn bản */
+    text-shadow: 0 0 3px gold; /* Thêm viền màu vàng cho các chữ */
+}
+.btn-search {
+    margin-right: 10px; /* Khoảng cách từ biểu tượng tìm kiếm đến biểu tượng khác */
+}
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+body {
+    background-color:#fceff6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fdf1f9;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(100% - 24px); /* trừ đi padding của container */
+    max-width: 1200px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.book {
+    border: 1px solid #56f30e; /* Màu xanh đậm */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 5px;
+    padding: 10px;
+    /* Đặt chiều rộng chính xác để phù hợp với 5 sách trên một hàng, tính cả margin */
+    width: calc(20% - 10px - 22px); /* 20% cho mỗi sách, 10px tổng cộng margin, và 22px khoảng cách ngẫu nhiên */
+    text-align: center;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.book img:hover {
+    transform: scale(1.1);
+}
+
+.book h2, .book p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #4CAF50; /* Màu nền xanh lá */
+    color: #ffd700; /* Màu chữ vàng */
+    padding: 10px 20px; /* Đệm xung quanh nút */
+    text-decoration: none; /* Bỏ gạch chân */
+    border: none; /* Bỏ viền */
+    border-radius: 5px; /* Bo góc nút */
+    cursor: pointer; /* Con trỏ khi di chuyển vào nút */
+    font-size: 16px; /* Cỡ chữ */
+    font-weight: bold; /* Làm đậm chữ */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bóng đổ nhẹ */
+}
+
+.button-link:hover {
+    background-color: #367C2B; /* Thay đổi màu khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Bóng đổ đậm hơn khi hover */
+    transform: translateY(-2px); /* Nhấc nút lên nhẹ khi hover */
+}
+
+.button-link:active {
+    transform: translateY(1px); /* Dịch chuyển nút xuống khi nhấn */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Bóng đổ khi nhấn */
+}
+/*footer*/
+.footer {
+    padding: 10px 0;  /* Giảm padding cho phần tử footer chính nếu nó lớn */
+    background-color: #343a40;
+    color: #fff;
+    padding:  15px 0px; /* Giảm giá trị padding để ngắn lại chiều cao */
+    margin-bottom: 20px; /* Thêm margin-bottom để làm cho khoảng cách gần lại */
+    border-top: 1px solid gold; /* Tạo đường kẻ chỉ màu vàng phía trên footer */
+    
+    }
+
+    .footer-container {
+        margin-left:20px;
+        margin-right:20px;
+        display: flex;
+        justify-content: space-between; /* Cân bằng khoảng cách giữa các cột */
+        align-items: start; /* Căn các cột ở đầu hàng */
+        flex-wrap: wrap; /* Cho phép các cột chuyển xuống hàng tiếp theo nếu không đủ không gian */
+        padding: 20px;          /* Thêm padding cho container để tạo khoảng cách xung quanh */
+    }
+    
+    .footer-column {
+        flex: 1; /* Cho phép mỗi cột mở rộng để chiếm không gian tương đương */
+        min-width: 250px; /* Đặt chiều rộng tối thiểu cho mỗi cột để tránh quá nhỏ */
+        padding: 20px; /* Thêm đệm cho nội dung bên trong */
+        margin-right: 40px;  /* Thêm khoảng cách bên phải cho mỗi cột trừ cột cuối cùng */
+    }
+    
+    .info-item {
+        margin-bottom: 40px; /* Thêm khoảng cách giữa các items nếu bạn có nhiều items trong một cột */
+    }
+
+.logo {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color:#07e630;
+    text-shadow: 0 0 2px gold; /* Thêm viền màu vàng cho các chữ */
+}
+
+.slogan {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.subscribe-input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #333; /* Màu chữ đen */
+}
+
+.subscribe-btn {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    background-color: #13f252;
+    color: #fff;
+    cursor: pointer;
+}
+.subscribe-input, .subscribe-btn {
+    border: 1px solid gold; /* Thêm viền màu vàng cho input và button */
+}
+
+.subscribe-btn:hover {
+    background-color: #0056b3; /* Màu xanh nhạt khi hover */
+}
+
+.social-link {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.social-link:hover {
+    color: #ccc; /* Màu xám nhạt khi hover */
+}
+
+.info-item {
+    margin-bottom: 30px;
+}
+
+.info-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-link {
+    color: #fff;
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+.info-text {
+    margin-bottom: 8px;
+}
+
+.payment-img {
+    max-width: 100px;
+    margin-top: 20px;
+}
+.footer-social, .footer-subscribe {
+    text-shadow: 0 0 5px gold; /* Thêm viền màu vàng cho các chữ */
+}
+/*slide*/
+.hot-anime-section {
+    width: 90%; /* Đặt kích thước section là 90% chiều ngang */
+    margin: 0 auto; /* Canh giữa section */
+    text-align: center; /* Canh giữa nội dung trong section */
+  }
+  
+  .hot-anime-container {
+   
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px; /* Khoảng cách giữa section và các phần tử */
+  }
+  
+  .hot-anime {
+    display: inline-block;
+    border: o.5px solid #56f30e; /* Màu xanh đậm */
+    width: calc(25% - 20px); /* Kích thước mỗi phần tử */
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  }
+  
+  .hot-anime img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .hot-anime p {
+    margin-top: 10px;
+  }
+  
+  .prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  color: #333;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+  .hot-anime-container {
+    display: flex; /* Sử dụng Flexbox để căn chỉnh các phần tử */
+    flex-wrap: wrap; /* Cho phép các phần tử chuyển hàng khi không còn không gian */
+    justify-content: space-between; /* Căn các phần tử theo hai bên */
+  }
+  
+  .hot-anime {
+    width: calc(25% - 20px); /* Đặt kích thước mỗi phần tử */
+    margin-bottom: 20px; /* Khoảng cách giữa các hàng */
+    margin-right: 0px; /* Khoảng cách giữa các phần tử */
+  }
+  .banner {
+    width: 100%; /* Chiều rộng full */
+    height: 300px; /* Chiều cao tầm 250px */
+    overflow: hidden; /* Ẩn phần ngoài khung của hình ảnh */
+    margin-bottom: 0; /* Loại bỏ khoảng cách dưới cho banner */
+}
+
+.banner img {
+    width: 100%; /* Chiều rộng hình ảnh là 100% của phần tử cha */
+    height: auto; /* Chiều cao tự động để giữ tỷ lệ khung hình */
+    object-fit: cover; /* Hiển thị hình ảnh mà không bị biến dạng */
+}
+/*form login*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* style the container */
+  .container2 {
+    position: relative;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 0 30px 0;
+  } 
+  
+  /* style inputs and link buttons */
+  input,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  /* add appropriate colors to fb, twitter and google buttons */
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+  
+  /* style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Two-column layout */
+  .col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* vertical line */
+  .vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    height: 175px;
+  }
+  
+  /* text inside the vertical line */
+  .vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+  
+  /* hide some text on medium and large screens */
+  .hide-md-lg {
+    display: none;
+  }
+  
+  /* bottom container */
+  .bottom-container {
+    text-align: center;
+    background-color: #666;
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 650px) {
+    .col {
+      width: 100%;
+      margin-top: 0;
+    }
+    /* hide the vertical line */
+    .vl {
+      display: none;
+    }
+    /* show the hidden text on small screens */
+    .hide-md-lg {
+      display: block;
+      text-align: center;
+    }
+  }
+

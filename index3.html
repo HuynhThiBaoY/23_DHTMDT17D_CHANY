@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chany Bookstore</title>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="style3.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="script.js" rel="script">
+</head>
+
+<header>
+
+  <header class="container ">
+    <div class="top-info">
+        <small><i class="fas fa-map-marker-alt"></i>  <span class="animated-text">41/22 Phạm Ngũ Lão, phường 3, quận Gò Vấp</span></small>
+        <small><i class="fas fa-envelope"></i>  Chanybookstore@gmail.com</small>
+    </div>
+</header>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">CHANY</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index3.html" class="nav-link active">Trang Chủ</a></li>
+            <li class="nav-item"><a href="sachban2.html" class="nav-link">Sách Bán</a></li>
+            <li class="nav-item dropdown">
+                <a href="docsachmienphi.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sách đọc miễn phí</a>
+                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                    <a href="docsachmienphi.html" class="dropdown-item">Truyện tranh</a>
+                    <a href="docsachmienphi.html" class="dropdown-item">Tiểu thuyết</a>
+                    <a href="docsachmienphi.html" class="dropdown-item">Văn học</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="gioithieu.html" class="nav-link">Giới thiệu</a></li>
+            <li class="nav-item"><a href="lienhe2.html" class="nav-link">Liên Hệ</a></li>
+        </ul>
+        <div class="d-flex m-3 me-0">
+            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" onclick="document.getElementById('id01').style.display='block'"><i class="fas fa-search text-primary"></i></button>
+            <a href="#" class="position-relative me-4 my-auto">
+                <i class="fa fa-shopping-bag fa-2x"></i>
+                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px;"></span>
+            </a>
+            <a href="#" id="loginIcon" class="my-auto"><i class="fas fa-user fa-2x"></i></a>
+        </div>
+    </nav>
+  
+    <!-- Modal HTML -->
+    <div id="id01" class="modal" style="display: none;">
+        <!-- Modal content would be here -->
+        <!-- Details are omitted for brevity -->
+  
+    
+    <!-- Modal -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <div class="container2">
+      <form action="/action_page.php">
+        <div class="row">
+          <h2 style="text-align:center">Đăng nhập hoặc đăng kí</h2>
+          <div class="vl">
+            <span class="vl-innertext">Hoặc</span>
+          </div>
+    
+          <div class="col">
+            <a href="#" class="fb btn">
+              <i class="fa fa-facebook fa-fw"></i> Đăng nhập với Facebook
+             </a>
+            <a href="#" class="twitter btn">
+              <i class="fa fa-twitter fa-fw"></i> Đăng nhập với Twitter
+            </a>
+            <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+              </i> Đăng nhập với Google+
+            </a>
+          </div>
+    
+          <div class="col">
+            <div class="hide-md-lg">
+              <p>Or sign in manually:</p>
+            </div>
+    
+            <input type="text" name="username" placeholder="Tên đăng nhập" required>
+            <input type="password" name="password" placeholder="Mật khẩu" required>
+            <input type="submit" value="Đăng nhập">
+          </div>
+          
+        </div>
+      </form>
+    </div>
+    
+    <div class="bottom-container">
+      <div class="row">
+        <div class="col">
+          <a href="#" style="color:white" class="btn">Đăng ký</a>
+        </div>
+        <div class="col">
+          <a href="#" style="color:white" class="btn">Quên mật khẩu?</a>
+        </div>
+      </div>
+    </div>
+    </div>
+     <link rel="stylesheet" href="css/formdangnhap.css"> 
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var loginIcon = document.getElementById('loginIcon');
+    var modal = document.getElementById('id01');
+
+    loginIcon.addEventListener('click', function() {
+        modal.style.display = 'block';
+    });
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+
+    window.addEventListener("scroll", function() {
+        var navbar = document.getElementById("navbar");
+        if (window.scrollY > 0) {
+            navbar.classList.add("fixed-navbar");
+        } else {
+            navbar.classList.remove("fixed-navbar");
+        }
+    });
+});
+        </script>
+    </div>
+            </div>
+            </div>
+</header>
+<!-- Kéo hình-->
+
+<!-- Modal Search End -->
+<body>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+    
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="img/4.png" style="width:100%">
+         
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="img/3.png" style="width:100%">
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="img/2.png" style="width:100%">
+         
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <script >
+      let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    <!-- Hero End -->
+    <div class="feature-columns">
+        <div class="feature-column">
+            <div class="icon"><i class="fas fa-money-check-alt"></i></div>
+            <div class="content">
+                <h3>Thanh toán </h3>
+                <p>Phương thức thanh toán đa dạng.</p>
+            </div>
+        </div>
+    
+        <div class="feature-column">
+            <div class="icon"><i class="fas fa-truck"></i></div>
+            <div class="content">
+                <h3>Giao hàng </h3>
+                <p>Giao hàng nhanh chóng trong    <br>3 - 5 ngày.</p>
+            </div>
+        </div>
+    
+        <div class="feature-column">
+            <div class="icon"><i class="fas fa-sync-alt"></i></div>
+            <div class="content">
+                <h3>Đổi trả </h3>
+                <p>Cung cấp dịch vụ đổi trả sản phẩm.</p>
+            </div>
+        </div>
+    
+        <div class="feature-column">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <div class="content">
+                <h3>Hoạt động 24/7</h3>
+                <p>Luôn luôn mở cửa hoạt động.</p>
+            </div>
+        </div>
+       
+    </div>
+    <div>
+      
+        <style>  .add-to-cart-button {
+            background-color: #4CAF50; /* Màu xanh lá */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .add-to-cart-button:hover {
+            background-color: #45a049; /* Màu xanh lá đậm hơn */
+            transform: scale(1.05);
+        }
+        
+        .add-to-cart-button:active {
+            transform: scale(0.95);
+        }</style> 
+
+       <section>  
+        <center><h2>💕 Sách bán chạy nhất💕 </h2></center><br>
+<div class="other ">
+    <div class="book">
+      <a href="shop-detail copy.html">
+        <img src="https://images.toplist.vn/images/800px/tren-duong-bang-1024494.jpg" alt="Book 1">
+      </a>
+      <h2>Trên đường băng</h2>
+      <p>Mô tả sơ lược về bài viết</p>
+      <p>75.000VNĐ</p>
+    
+      <button type="button" onclick="addToCart('Sơn ca vẫn hot', 19.99)">Thêm vào giỏ hàng</button>
+     
+    </div>
+    <!-- Add more book divs as needed -->
+    <div class="book">
+        <a href="shop-detail copy.html">
+            <img src="https://sachdenroi.com/wp-content/uploads/2019/11/son-ca-van-hot.jpg" alt="Book 2">
+        </a>
+        <h2>Sơn ca vẫn hot</h2>
+        <p>Mô tả sơ lược về các chi tiết</p>
+        <p>75.000VNĐ</p>
+        <button type="button" onclick="addToCart('Sơn ca vẫn hot', 19.99)">Thêm vào giỏ hàng</button>
+    </div>
+    <script>
+        function addToCart(bookTitle, price) {
+            // Logic để thêm sách vào giỏ hàng của bạn
+            console.log(bookTitle + " đã được thêm với giá $" + price);
+            // Bạn có thể thêm mã để cập nhật giỏ hàng trên trang hoặc lưu vào sessionStorage/localStorage
+        }
+        </script>
+    <div class="book">
+      <a href="shop-detail copy.html">
+        <img src="https://www.phamanhhong.net/uploads/files/2022/09/12/nhung-cuon-sach-hay-ve-cs-1.jpg" alt="Book 1">
+      </a>
+      <h2>Đừng lựa chọn an nhàn </h2>
+      <p>Mô tả sơ lược về bài viết</p>
+      <p>75.000VNĐ</p>
+      <button type="button" onclick="addToCart('Sơn ca vẫn hot', 19.99)">Thêm vào giỏ hàng</button>
+    </div>
+    <div class="book">
+      <a href="shop-detail copy.html">
+        <img src="https://bizweb.dktcdn.net/100/438/408/files/nhung-cuon-sach-hay-ve-cuoc-song-yodyvn-3.jpg?v=1683363249019" alt="Product 1" class="product-image" alt="Book 2">
+      </a>
+      <h2>Nhà giả kim</h2>
+      <p>Mô tả sơ lược về bài viết</p>
+      <p>75.000VNĐ</p>
+      <button type="button" onclick="addToCart('Sơn ca vẫn hot', 19.99)">Thêm vào giỏ hàng</button>
+    </div>
+    </section>
+    <script>
+        // Biến lưu trữ số lượng sản phẩm đã thêm vào giỏ hàng
+let cartItemCount = 0;
+
+// Hàm để thêm sản phẩm vào giỏ hàng
+function addToCart(bookTitle, price) {
+    // Logic để thêm sản phẩm vào giỏ hàng của bạn
+    console.log(bookTitle + " đã được thêm với giá $" + price);
+    
+    // Tăng số lượng sản phẩm đã thêm vào giỏ hàng
+    cartItemCount++;
+
+    // Cập nhật số lượng sản phẩm trên biểu tượng giỏ hàng trên header
+    const cartIcon = document.querySelector(".fa-shopping-bag");
+    cartIcon.innerHTML = `<span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px;">${cartItemCount}</span>`;
+}
+
+// Sử dụng hàm addToCart() khi nhấp vào nút "Thêm vào giỏ hàng"
+document.addEventListener("DOMContentLoaded", function() {
+    const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
+    addToCartButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const bookTitle = button.parentNode.querySelector("h2").innerText;
+            const price = button.parentNode.querySelector("p:last-of-type").innerText;
+            const regex = /[0-9.]+/g; // Regex để lấy giá từ chuỗi có dạng "75.000VNĐ"
+            const extractedPrice = parseFloat(price.match(regex)[0]);
+            addToCart(bookTitle, extractedPrice);
+        });
+    });
+});
+
+</script>
+    </script>
+        <!--banner-->
+        <div class="banner">
+            <img src="https://static.accesstrade.vn/publisher/www/files/img_promo/offer/img/tikivn/Tiki_07.03_2.jpg">
+            </div>
+            <!--Hình di chuyển lần 2-->
+            <div>
+            <div id="imageDrag1" class="customDraggable">
+                <img src="img/13 (1).png" alt="Custom Draggable Image 1">
+              </div>
+              <div id="imageDrag2" class="customDraggable">
+                <img src="img/11 (1).png" alt="Custom Draggable Image 2">
+              </div>
+              <div id="imageDrag3" class="customDraggable">
+                <img src="img/11 (1).png" alt="Custom Draggable Image 3">
+              </div>
+              <div id="imageDrag4" class="customDraggable">
+                <img src="img/11 (1).png" alt="Custom Draggable Image 4">
+              </div>
+              <div id="imageDrag5" class="customDraggable">
+                <img src="img/13 (1).png" alt="Custom Draggable Image 5">
+              </div>
+              <script>document.addEventListener("DOMContentLoaded", function() {
+                const draggableImages = document.querySelectorAll('.customDraggable');
+                const moveLimits = {};  // Tracks move counts for each element
+                let zIndexCounter = 1;  // This will help us manage z-index of each draggable image
+            
+                draggableImages.forEach(imgContainer => {
+                    const savedPos = localStorage.getItem(imgContainer.id + 'FinalPosition');
+                    if (savedPos) {
+                        const pos = JSON.parse(savedPos);
+                        imgContainer.style.left = pos.left;
+                        imgContainer.style.top = pos.top;
+                        moveLimits[imgContainer.id] = 2;  // Set move limit to 2 to prevent further moves
+                    } else {
+                        moveLimits[imgContainer.id] = 0;  // Initialize move count
+                    }
+            
+                    imgContainer.onmousedown = function(event) {
+                        if (moveLimits[imgContainer.id] >= 2) return;  // Allow max 2 moves
+            
+                        imgContainer.style.zIndex = zIndexCounter++;  // Increase z-index to make this the topmost element
+            
+                        let offsetX = event.clientX - imgContainer.getBoundingClientRect().left;
+                        let offsetY = event.clientY - imgContainer.getBoundingClientRect().top;
+            
+                        function updatePosition(pageX, pageY) {
+                            imgContainer.style.left = pageX - offsetX + 'px';
+                            imgContainer.style.top = pageY - offsetY + 'px';
+                        }
+            
+                        function onMouseMove(event) {
+                            updatePosition(event.pageX, event.pageY);
+                        }
+            
+                        document.addEventListener('mousemove', onMouseMove);
+            
+                        imgContainer.onmouseup = function() {
+                            document.removeEventListener('mousemove', onMouseMove);
+                            imgContainer.onmouseup = null;
+                            moveLimits[imgContainer.id]++;
+                            if (moveLimits[imgContainer.id] >= 2) {
+                                const finalPos = { left: imgContainer.style.left, top: imgContainer.style.top };
+                                localStorage.setItem(imgContainer.id + 'FinalPosition', JSON.stringify(finalPos));
+                            }
+                        };
+            
+                        imgContainer.ondragstart = function() {
+                            return false;
+                        };
+            
+                        return false;
+                    };
+                });
+            });</script>
+            </div>
+            <!--chuyên mục giảm giá-->
+            <div div class="special">
+              <center> <h2>💕 Chuyên mục giảm giá💕 </h2> </center> 
+            <div class="special-offer-container">
+              
+                <div class="special-offer">
+                  <div class="special-book-image">
+                    <a href="shop-detail copy.html">
+                    <img src="https://cdn.tgdd.vn/Files/2023/03/09/1515820/10-cuon-sach-self-help-hay-huu-ich-nhat-dinh-phai-doc-mot-lan-202303100820244232.jpg" alt="Bestseller Book">
+                  </a>
+                </div>
+                  <div class="special-book-info">
+                    <h2>Tiểu thuyết </h2>
+                    <p>50% OFF</p>
+                    
+                  </div>
+                </div>
+                <div class="special-offer">
+                  <div class="special-book-image">
+                    <div class="special-book-image">
+                    <img src="https://media.baoquangninh.vn/upload/image/202306/medium/2089677_65a0c2f8e2efd4d005799852244de0fb.jpg" alt="Bestseller Book">
+                 </div>
+                </div>
+                  <div class="special-book-info">
+                    <h2>Sách thiếu nhi</h2>
+                    <p>20% OFF</p>
+                  </div>
+                </div>
+                <div class="special-offer">
+                  <div class="special-book-image">
+                    <img src="https://static.ybox.vn/2017/4/17/28b30570-2325-11e7-b963-56c566ee3692.jpg" alt="Bestseller Book">
+                  </div>
+                  <div class="special-book-info">
+                    <h2>Sách Trinh thám</h2>
+                    <p>15% OFF</p>
+                  </div>
+                  <script>document.querySelectorAll('.special-book-image img').forEach(item => {
+                    item.addEventListener('mouseenter', () => {
+                      item.style.transform = "scale(1.05)";
+                      item.style.transition = "transform 0.5s ease";
+                    });
+                  
+                    item.addEventListener('mouseleave', () => {
+                      item.style.transform = "scale(1)";
+                    });
+                  });</script>
+                </div>
+                </div>
+          
+    <!---Slide truyện-->
+<section class="hot-anime-section">
+    <h2>💕 Truyện đọc miễn phí💕 </h2>
+    <div class="hot-anime-container">
+        <div class="hot-anime">
+            <a href="doc.html">
+            <img src="https://lh3.googleusercontent.com/hE7pw7XIUcfZzvgsiRhxAOTsJ5o1CRtYccpS-v97k96bTC4sDlbj8bf6hUY1VE-JJRcejnifC0amzIk4lZTCTltu7tVz1SSb5Jigm9UqLT8=w622" alt="Tên Anime 1">
+        </a>
+        <p>Không còn có em</p>
+        </div>
+        <div class="hot-anime">
+            <img src="https://img.thichtruyen.vn/data/anh-truyen/2020/gio-am-khong-bang-anh-tham-tinh-thichtruyen.vn.jpg "alt="Tên Anime 2">
+            <p>Gió ấm không bằng anh</p>
+        </div>
+        <div class="hot-anime">
+            <img src="https://lh3.googleusercontent.com/QHFT2LhNaPlyX1V7hJgNFCToeMqQdsU5OmP8vhaNlh_KzbrsPKYUjNjXZW75IsBuVeHNawCuCo5Fkk0R5EuexJ_SZXOY4UZztOV5zoGgK88=w622" alt="Tên Anime 3">
+            <p>Bẫy tình của hồ ly</p>
+        </div>
+        <div class="hot-anime">
+            <img src="https://i0.wp.com/hemradio.com/wp-content/uploads/2022/12/5-troi-buoc-so-tong-giam-cam-vo-cu-den-dien-cuong.png?fit=600%2C847&ssl=1" alt="Tên Anime 4">
+            <p>Trói buộc giám đốc</p>
+        </div>
+  <div class="hot-anime">
+            <img src="https://i0.wp.com/hemradio.com/wp-content/uploads/2022/12/5-troi-buoc-so-tong-giam-cam-vo-cu-den-dien-cuong.png?fit=600%2C847&ssl=1" alt="Tên Anime 4">
+            <p>Trói buộc giám đốc</p>
+        </div>
+        <div class="hot-anime">
+            <img src="https://lh3.googleusercontent.com/QHFT2LhNaPlyX1V7hJgNFCToeMqQdsU5OmP8vhaNlh_KzbrsPKYUjNjXZW75IsBuVeHNawCuCo5Fkk0R5EuexJ_SZXOY4UZztOV5zoGgK88=w622" alt="Tên Anime 3">
+            <p>Bẫy tình của hồ ly</p>
+        </div>
+        <div class="hot-anime">
+            <img src="https://teamlanhlung.org/wp-content/uploads/2024/02/100-5-720x970.jpg" alt="Tên Anime 1">
+            <p>Không còn có em</p>
+        </div>
+
+        <div class="hot-anime">
+            <img src="https://st.nettruyenbb.com/data/comics/127/toan-chuc-phap-su.jpg" alt="Tên Anime 1">
+            <p>Chiếc lá cuồng phong</p>
+        </div>
+       
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hotAnime = document.querySelectorAll(".hot-anime");
+    const prevBtn = document.querySelector(".prev-btn");
+    const nextBtn = document.querySelector(".next-btn");
+
+    let currentIndex = 0;
+    const totalAnime = hotAnime.length;
+    const itemsPerPage = 4; // Số lượng hình ảnh hiển thị mỗi lần
+    const intervalTime = 2000; // Thời gian chuyển đổi tự động, tính bằng mili giây
+    let autoSlide = true; // Biến để kiểm soát tự động chuyển đổi slide
+
+    function showAnime(startIndex) {
+        for (let i = 0; i < totalAnime; i++) {
+            if (i >= startIndex && i < startIndex + itemsPerPage) {
+                hotAnime[i].style.display = "block";
+            } else {
+                hotAnime[i].style.display = "none";
+            }
+        }
+    }
+
+    function nextSlide() {
+        if (currentIndex + itemsPerPage < totalAnime) {
+            currentIndex += itemsPerPage;
+            showAnime(currentIndex);
+        } else {
+            currentIndex = 0;
+            showAnime(currentIndex);
+        }
+    }
+
+    // Tự động chuyển đổi slide sau mỗi intervalTime nếu autoSlide được kích hoạt
+    let autoSlideInterval;
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, intervalTime);
+    }
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+    startAutoSlide();
+
+    prevBtn.addEventListener("click", function() {
+        if (currentIndex > 0) {
+            currentIndex -= itemsPerPage;
+            if (currentIndex < 0) {
+                currentIndex = 0;
+            }
+            showAnime(currentIndex);
+            stopAutoSlide(); // Dừng tự động chuyển đổi khi người dùng nhấn nút
+        }
+    });
+
+    nextBtn.addEventListener("click", function() {
+        if (currentIndex + itemsPerPage < totalAnime) {
+            currentIndex += itemsPerPage;
+            showAnime(currentIndex);
+            stopAutoSlide(); // Dừng tự động chuyển đổi khi người dùng nhấn nút
+        }
+    });
+
+    // Hiển thị 4 hình ảnh đầu tiên ban đầu
+    showAnime(currentIndex);
+});
+</script>
+    </script>
+     <!-- Nút điều hướng -->
+     <button class="prev-btn">&lt;</button>
+     <button class="next-btn">&gt;</button>
+    </div>
+    </section>
+    
+</div>
+<footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1 class="logo">CHANY</h1>
+            </div>
+            <div class="footer-subscribe">
+                <input class="subscribe-input" type="email" placeholder="Your Email">
+                <button class="subscribe-btn">Subscribe Now</button>
+            </div>
+            <div class="footer-social">
+                <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-link" href="#"><i class="fab fa-youtube"></i></a>
+                <a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-column">
+                        <div class="info-item">
+                            <iframe
+                                width="170"
+                                height="150"
+                                style="border:0"
+                                loading="lazy"
+                                allowfullscreen
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.6602476390014!2d-122.08424968469278!3d37.4220657798214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7e16ed62adf%3A0xfb8f9004c6e714d!2sGoogleplex!5e0!3m2!1sen!2sus!4v1587629140387!5m2!1sen!2sus">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="info-item">
+                            <h4 class="info-title">Thông tin</h4>
+                            <a href="#" class="info-link">Về chúng tôi</a>
+                            <a href="#" class="info-link">Liên hệ</a>
+                            <a href="#" class="info-link">Chính sách</a>
+
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="info-item">
+                            <h4 class="info-title">Liên hệ</h4>
+                            <p class="info-text">Địa chỉ: 1429 Netus,NY 48247</p>
+                            <p class="info-text">Email: example@gmail.com</p>
+                            <p class="info-text">Phone: +0123 4567 8910</p>
+                        </div>
+                    </div>
+                </div>
+                </footer>
+        
+</body>
+</html>
+   

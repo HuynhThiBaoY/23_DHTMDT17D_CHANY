@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chany Bookstore</title>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="css/demo2.css" rel="stylesheet">
+    
+    <script src="script.js"></script>
+    <link href="script.js" rel="script">
+    <link rel="stylesheet" href="demo2.css">
+
+</head>
+<header>  
+  <header>
+    <header class="container">
+        <div class="top-info">
+            <small><i class="fas fa-map-marker-alt"></i>  41/22 Phạm Ngũ Lão, phường 3, quận Gò Vấp</small>
+            <small><i class="fas fa-envelope"></i>  Chanybookstore@gmail.com</small>
+        </div>
+    </header>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">CHANY</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index3.html" class="nav-link active">Trang Chủ</a></li>
+            <li class="nav-item"><a href="sachban2.html" class="nav-link">Sách Bán</a></li>
+            <li class="nav-item dropdown">
+                <a href="docsachmienphi.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sách đọc miễn phí</a>
+                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                    <a href="docsachmienphi.html" class="dropdown-item">Truyện tranh</a>
+                    <a href="docsachmienphi.html" class="dropdown-item">Tiểu thuyết</a>
+                    <a href="docsachmienphi.html" class="dropdown-item">Văn học</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="gioithieu.html" class="nav-link">Giới thiệu</a></li>
+            <li class="nav-item"><a href="lienhe2.html" class="nav-link">Liên Hệ</a></li>
+        </ul>
+        <div class="d-flex m-3 me-0">
+            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" onclick="document.getElementById('id01').style.display='block'"><i class="fas fa-search text-primary"></i></button>
+            <a href="#" class="position-relative me-4 my-auto">
+                <i class="fa fa-shopping-bag fa-2x"></i>
+                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px;"></span>
+            </a>
+            <a href="#" id="loginIcon" class="my-auto"><i class="fas fa-user fa-2x"></i></a>
+        </div>
+    </nav>
+    <!-- Modal HTML -->
+    <div id="id01" class="modal" style="display: none;">
+        <!-- Modal content would be here -->
+        <!-- Details are omitted for brevity -->
+  
+    
+   <!-- Modal -->
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <div class="container2">
+     <form action="/action_page.php">
+       <div class="row">
+         <h2 style="text-align:center">Đăng nhập hoặc đăng kí</h2>
+         <div class="vl">
+           <span class="vl-innertext">Hoặc</span>
+         </div>
+   
+         <div class="col">
+           <a href="#" class="fb btn">
+             <i class="fa fa-facebook fa-fw"></i> Đăng nhập với Facebook
+            </a>
+           <a href="#" class="twitter btn">
+             <i class="fa fa-twitter fa-fw"></i> Đăng nhập với Twitter
+           </a>
+           <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+             </i> Đăng nhập với Google+
+           </a>
+         </div>
+   
+         <div class="col">
+           <div class="hide-md-lg">
+             <p>Or sign in manually:</p>
+           </div>
+   
+           <input type="text" name="username" placeholder="Tên đăng nhập" required>
+           <input type="password" name="password" placeholder="Mật khẩu" required>
+           <input type="submit" value="Đăng nhập">
+         </div>
+         
+       </div>
+     </form>
+   </div>
+   
+   <div class="bottom-container">
+     <div class="row">
+       <div class="col">
+         <a href="#" style="color:white" class="btn">Đăng ký</a>
+       </div>
+       <div class="col">
+         <a href="#" style="color:white" class="btn">Quên mật khẩu?</a>
+       </div>
+     </div>
+   </div>
+   </div>
+    <link rel="stylesheet" href="css/formdangnhap.css"> 
+       <script>
+document.addEventListener('DOMContentLoaded', function() {
+   var loginIcon = document.getElementById('loginIcon');
+   var modal = document.getElementById('id01');
+
+   loginIcon.addEventListener('click', function() {
+       modal.style.display = 'block';
+   });
+
+   window.onclick = function(event) {
+       if (event.target == modal) {
+           modal.style.display = "none";
+       }
+   };
+
+   window.addEventListener("scroll", function() {
+       var navbar = document.getElementById("navbar");
+       if (window.scrollY > 0) {
+           navbar.classList.add("fixed-navbar");
+       } else {
+           navbar.classList.remove("fixed-navbar");
+       }
+   });
+});
+       </script>
+   </div>
+           </div>
+           </div>
+</header>
+<!-- Kéo hình-->
+
+<body>
+    <div class="container">
+        <div class="image-container">
+          <img src="https://cdn0.fahasa.com/media/catalog/product/z/5/z5076620072937_da8216298d99e526fef85c804c0c2389_2.jpg" alt="Book Cover">
+        </div>
+  <div class="product-details">
+    <h1>Atomic Habits - Thay Đổi Tí Hon Hiệu Quả Bất Ngờ (Tái Bản 2023)</h1>
+    <p>Nhà cung cấp: Cty Bản Lê Phương Nam</p>
+    <p>Tác giả: James Clear</p>
+    <p>Nhà xuất bản: Thế Giới</p>
+    <p>Hình thức bìa: Bìa Mềm</p>
+
+    <div class="flash-sale">
+      <span class="sale-text">FLASH SALE</span>
+      <div class="timer">
+        <span class="time">08</span>
+        <span class="separator">:</span>
+        <span class="time">40</span>
+        <span class="separator">:</span>
+        <span class="time">08</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+
+    <div class="price">
+      <span class="original-price">189.000 đ</span>
+      <span class="discount">-30%</span>
+      <span class="sale-price">132.300 đ</span>
+    </div>
+
+    <div class="delivery-info">
+      <p>Thời gian giao hàng ngắn nhất </p>
+      <p>Chính sách đổi trả miễn phí </p>
+    </div>
+    <div class="quantity">
+      <label for="quantity">Số lượng:</label>
+      <div class="quantity-input">
+        <button class="decrease">-</button>
+        <input type="number" id="quantity" value="1" min="1">
+        <button class="increase">+</button>
+      </div>
+      <!-- HTML -->
+<button id="cartButton" class="cart-button" onclick="showCart()">
+    <i class="fas fa-shopping-cart"></i> Giỏ hàng
+    <span id="cartItemCount" class="cart-item-count"></span> <!-- Số lượng sản phẩm trong giỏ hàng -->
+</button>
+</div>
+
+<style>
+   
+</style>
+    </div>
+  </div>
+<hr>
+  <div class="description">
+    <h2>Mô tả sản phẩm</h2>
+    <p>
+      Atomic Habits là một cuốn sách xuất sắc về việc tạo ra những thói quen tích cực và loại bỏ những thói quen tiêu cực trong cuộc sống của bạn. 
+      Tác giả James Clear đã tạo ra một khung cảnh sâu sắc và chi tiết về cách các thói quen có thể ảnh hưởng đến cuộc sống hàng ngày của chúng ta.
+    </p>
+    <p>
+      Cuốn sách cung cấp những phương pháp cụ thể và thực tiễn để bạn có thể áp dụng ngay lập tức vào cuộc sống của mình, giúp bạn trở thành phiên bản tốt nhất của chính mình.
+    </p>
+  </div>
+  <div class="product-rating">
+    <h3>Đánh giá sản phẩm</h3>
+    <div class="rating-bars">
+      <div class="rating-bar">
+        <span class="rating-label">5 sao</span>
+        <div class="rating-progress">
+          <div class="rating-value" style="width: 0%;"></div>
+        </div>
+        <span class="rating-percentage">0%</span>
+      </div>
+      <div class="rating-bar">
+        <span class="rating-label">4 sao</span>
+        <div class="rating-progress">
+          <div class="rating-value" style="width: 0%;"></div>
+        </div>
+        <span class="rating-percentage">0%</span>
+      </div>
+      <div class="rating-bar">
+        <span class="rating-label">3 sao</span>
+        <div class="rating-progress">
+          <div class="rating-value" style="width: 0%;"></div>
+        </div>
+        <span class="rating-percentage">0%</span>
+      </div>
+      <div class="rating-bar">
+        <span class="rating-label">2 sao</span>
+        <div class="rating-progress">
+          <div class="rating-value" style="width: 0%;"></div>
+        </div>
+        <span class="rating-percentage">0%</span>
+      </div>
+      <div class="rating-bar">
+        <span class="rating-label">1 sao</span>
+        <div class="rating-progress">
+          <div class="rating-value" style="width: 0%;"></div>
+        </div>
+        <span class="rating-percentage">0%</span>
+      </div>
+    </div>
+    <div class="rating-count">0 đánh giá</div>
+    <div class="user-ratings"></div>
+    <button id="loginButton">Đăng nhập</button>
+  </div>
+  
+  <script>
+    const ratingStars = document.querySelectorAll('.rating-stars .star');
+const ratingForm = document.querySelector('.rating-form');
+const ratingMessage = document.querySelector('.rating-message');
+const userRatings = document.querySelector('.user-ratings');
+const loginButton = document.getElementById('loginButton');
+
+let isLoggedIn = false; // Giả sử khách hàng chưa đăng nhập
+
+// Xử lý sự kiện click vào ngôi sao đánh giá
+ratingStars.forEach((star, index) => {
+  star.addEventListener('click', () => {
+    if (!isLoggedIn) {
+      ratingMessage.textContent = 'Bạn cần đăng nhập để đánh giá sản phẩm.';
+      return;
+    }
+
+    const rating = index + 1;
+    ratingStars.forEach((star, starIndex) => {
+      if (starIndex < rating) {
+        star.classList.add('filled');
+      } else {
+        star.classList.remove('filled');
+      }
+    });
+
+    ratingForm.style.display = 'block';
+  });
+});
+
+// Xử lý sự kiện gửi đánh giá
+const ratingSubmitButton = document.querySelector('.rating-submit button');
+ratingSubmitButton.addEventListener('click', () => {
+  const reviewText = document.querySelector('.rating-form textarea').value.trim();
+  if (reviewText) {
+    const filledStars = document.querySelectorAll('.rating-stars .star.filled');
+    const rating = filledStars.length;
+
+    const userReview = document.createElement('div');
+    userReview.classList.add('user-review');
+    userReview.innerHTML = `
+      <div class="review-rating">
+        ${Array(rating).fill('<span class="star filled"></span>').join('')}
+        ${Array(5 - rating).fill('<span class="star"></span>').join('')}
+      </div>
+      <div class="review-text">${reviewText}</div>
+    `;
+
+    userRatings.appendChild(userReview);
+    ratingForm.style.display = 'none';
+    document.querySelector('.rating-form textarea').value = '';
+    ratingStars.forEach(star => star.classList.remove('filled'));
+  }
+});
+
+// Xử lý sự kiện đăng nhập
+loginButton.addEventListener('click', () => {
+  isLoggedIn = !isLoggedIn;
+  if (isLoggedIn) {
+    ratingMessage.textContent = 'Chỉ có thành viên mới có thể viết nhận xét. Vui lòng đăng nhập hoặc đăng ký.';
+  } else {
+    ratingMessage.textContent = 'Bạn cần đăng nhập để đánh giá sản phẩm.';
+  }
+});
+  </script>
+  <script >
+    // script.js
+const timeElements = document.querySelectorAll('.time');
+const progressBar = document.querySelector('.progress');
+
+// Hàm đếm ngược thời gian Flash Sale
+function countdownTimer() {
+  const endTime = new Date('2024-04-25T08:48:08').getTime(); // Thời gian kết thúc Flash Sale
+  const now = new Date().getTime();
+  const distance = endTime - now;
+
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  timeElements[0].textContent = hours.toString().padStart(2, '0');
+  timeElements[1].textContent = minutes.toString().padStart(2, '0');
+  timeElements[2].textContent = seconds.toString().padStart(2, '0');
+
+  const progress = (1 - distance / (endTime - now)) * 100;
+  progressBar.style.width = `${progress}%`;
+
+  if (distance < 0) {
+    clearInterval(countdownInterval);
+    timeElements.forEach(el => el.textContent = '00');
+    progressBar.style.width = '100%';
+  }
+}
+
+const countdownInterval = setInterval(countdownTimer, 1000);
+
+// Xử lý tăng/giảm số lượng sản phẩm
+const quantityInput = document.getElementById('quantity');
+const decreaseBtn = document.querySelector('.decrease');
+const increaseBtn = document.querySelector('.increase');
+
+decreaseBtn.addEventListener('click', () => {
+  if (quantityInput.value > 1) {
+    quantityInput.value = parseInt(quantityInput.value) - 1;
+  }
+});
+
+increaseBtn.addEventListener('click', () => {
+  quantityInput.value = parseInt(quantityInput.value) + 1;
+});
+  </script>
+ <!---Slide truyện-->
+ <section class="hot-anime-section">
+  <h2>💕 Truyện đọc miễn phí💕 </h2>
+  <div class="hot-anime-container">
+      <div class="hot-anime">
+          <a href="doc.html">
+          <img src="https://lh3.googleusercontent.com/hE7pw7XIUcfZzvgsiRhxAOTsJ5o1CRtYccpS-v97k96bTC4sDlbj8bf6hUY1VE-JJRcejnifC0amzIk4lZTCTltu7tVz1SSb5Jigm9UqLT8=w622" alt="Tên Anime 1">
+      </a>
+      <p>Không còn có em</p>
+      </div>
+      <div class="hot-anime">
+          <img src="https://img.thichtruyen.vn/data/anh-truyen/2020/gio-am-khong-bang-anh-tham-tinh-thichtruyen.vn.jpg "alt="Tên Anime 2">
+          <p>Gió ấm không bằng anh</p>
+      </div>
+      <div class="hot-anime">
+          <img src="https://lh3.googleusercontent.com/QHFT2LhNaPlyX1V7hJgNFCToeMqQdsU5OmP8vhaNlh_KzbrsPKYUjNjXZW75IsBuVeHNawCuCo5Fkk0R5EuexJ_SZXOY4UZztOV5zoGgK88=w622" alt="Tên Anime 3">
+          <p>Bẫy tình của hồ ly</p>
+      </div>
+      <div class="hot-anime">
+          <img src="https://i0.wp.com/hemradio.com/wp-content/uploads/2022/12/5-troi-buoc-so-tong-giam-cam-vo-cu-den-dien-cuong.png?fit=600%2C847&ssl=1" alt="Tên Anime 4">
+          <p>Trói buộc giám đốc</p>
+      </div>
+      <div class="hot-anime">
+          <img src="https://i0.wp.com/hemradio.com/wp-content/uploads/2022/12/5-troi-buoc-so-tong-giam-cam-vo-cu-den-dien-cuong.png?fit=600%2C847&ssl=1" alt="Tên Anime 4">
+          <p>Trói buộc giám đốc</p>
+      </div>
+      <div class="hot-anime">
+          <img src="https://lh3.googleusercontent.com/QHFT2LhNaPlyX1V7hJgNFCToeMqQdsU5OmP8vhaNlh_KzbrsPKYUjNjXZW75IsBuVeHNawCuCo5Fkk0R5EuexJ_SZXOY4UZztOV5zoGgK88=w622" alt="Tên Anime 3">
+          <p>Bẫy tình của hồ ly</p>
+      </div>
+      <div class="hot-anime">
+          <img src="https://teamlanhlung.org/wp-content/uploads/2024/02/100-5-720x970.jpg" alt="Tên Anime 1">
+          <p>Không còn có em</p>
+      </div>
+
+      <div class="hot-anime">
+          <img src="https://st.nettruyenbb.com/data/comics/127/toan-chuc-phap-su.jpg" alt="Tên Anime 1">
+          <p>Chiếc lá cuồng phong</p>
+      </div>
+     
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const hotAnime = document.querySelectorAll(".hot-anime");
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
+
+  let currentIndex = 0;
+  const totalAnime = hotAnime.length;
+  const itemsPerPage = 4; // Số lượng hình ảnh hiển thị mỗi lần
+  const intervalTime = 2000; // Thời gian chuyển đổi tự động, tính bằng mili giây
+  let autoSlide = true; // Biến để kiểm soát tự động chuyển đổi slide
+
+  function showAnime(startIndex) {
+      for (let i = 0; i < totalAnime; i++) {
+          if (i >= startIndex && i < startIndex + itemsPerPage) {
+              hotAnime[i].style.display = "block";
+          } else {
+              hotAnime[i].style.display = "none";
+          }
+      }
+  }
+
+  function nextSlide() {
+      if (currentIndex + itemsPerPage < totalAnime) {
+          currentIndex += itemsPerPage;
+          showAnime(currentIndex);
+      } else {
+          currentIndex = 0;
+          showAnime(currentIndex);
+      }
+  }
+
+  // Tự động chuyển đổi slide sau mỗi intervalTime nếu autoSlide được kích hoạt
+  let autoSlideInterval;
+  function startAutoSlide() {
+      autoSlideInterval = setInterval(nextSlide, intervalTime);
+  }
+  function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+  }
+  startAutoSlide();
+
+  prevBtn.addEventListener("click", function() {
+      if (currentIndex > 0) {
+          currentIndex -= itemsPerPage;
+          if (currentIndex < 0) {
+              currentIndex = 0;
+          }
+          showAnime(currentIndex);
+          stopAutoSlide(); // Dừng tự động chuyển đổi khi người dùng nhấn nút
+      }
+  });
+
+  nextBtn.addEventListener("click", function() {
+      if (currentIndex + itemsPerPage < totalAnime) {
+          currentIndex += itemsPerPage;
+          showAnime(currentIndex);
+          stopAutoSlide(); // Dừng tự động chuyển đổi khi người dùng nhấn nút
+      }
+  });
+
+  // Hiển thị 4 hình ảnh đầu tiên ban đầu
+  showAnime(currentIndex);
+});
+</script>
+  </script>
+   <!-- Nút điều hướng -->
+   <button class="prev-btn">&lt;</button>
+   <button class="next-btn">&gt;</button>
+  </div>
+  </section>
+</body>
+</html>
